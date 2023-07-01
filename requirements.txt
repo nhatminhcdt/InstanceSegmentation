@@ -1,0 +1,7 @@
+streamlit
+MoviePy
+opencv-python-headless
+ultralytics
+# Pillow
+# pafy
+# youtube_dl
