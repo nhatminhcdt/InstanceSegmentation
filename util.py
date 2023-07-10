@@ -19,14 +19,16 @@ def load_model(model_path):
     return model
 
 
-def display_tracker_options():
-    display_tracker = st.radio("Display Tracker", ('Yes', 'No'))
-    is_display_tracker = True if display_tracker == 'Yes' else False
-    if is_display_tracker:
-        tracker_type = st.radio("Tracker", ("bytetrack.yaml", "botsort.yaml"))
-        return is_display_tracker, tracker_type
-    return is_display_tracker, None
+# def display_tracker_options():
+#     display_tracker = st.radio("Display Tracker", ('Yes', 'No'))
+#     is_display_tracker = True if display_tracker == 'Yes' else False
+#     if is_display_tracker:
+#         tracker_type = st.radio("Tracker", ("bytetrack.yaml", "botsort.yaml"))
+#         return is_display_tracker, tracker_type
+#     return is_display_tracker, None
 
+def display_tracker_options():
+    return False, None
 
 def _display_detected_frames(conf, model, st_frame, image, is_display_tracking=None, tracker=None):
     """
