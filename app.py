@@ -19,7 +19,7 @@ st.set_page_config(
 
 # Main page heading
 st.title("Object Detection using YOLOv8")
-st.header("Material Segmentation")
+st.header("Object Segmentation")
 st.subheader('')
 
 # Sidebar
